@@ -4,7 +4,7 @@ JavaScript +TypeScript + Node.js
 Reference:  
 [JavaScript 学习-廖雪峰](https://www.liaoxuefeng.com/wiki/1022910821149312/1023020925712064)
 
-1. 多行字符串
+## 1. 多行字符串
 
 由于多行字符串用\n写起来比较费事，所以最新的ES6标准新增了一种多行字符串的表示方法，用反引号`...`表示：
 ```javascript
@@ -16,7 +16,7 @@ console.log(`多行
 测试`);  
 ```
 
-2. strict模式
+## 2. strict模式
 
 JavaScript在设计之初，为了方便初学者学习，并不强制要求用var申明变量。这个设计错误带来了严重的后果：如果一个变量没有通过var申明就被使用，那么该变量就自动被申明为全局变量：
 i = 10; // i现在是全局变量  
@@ -30,7 +30,7 @@ i = 10; // i现在是全局变量
 这是一个字符串，不支持strict模式的浏览器会把它当做一个字符串语句执行，支持strict模式的浏览器将开启strict模式运行JavaScript。  
 
 
-3. 模板字符串
+## 3. 模板字符串
 
 要把多个字符串连接起来，可以用+号连接：
 ```javascript
@@ -46,7 +46,7 @@ alert(message);
 ```
 练习：测试你的浏览器是否支持ES6模板字符串，如果不支持，请把模板字符串改为+连接的普通字符串：  
 
-4. slice
+## 4. slice
 slice()就是对应String的substring()版本，它截取Array的部分元素，然后返回一个新的Array：
 ```javascript
 var arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
@@ -60,7 +60,7 @@ aCopy; // ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 aCopy === arr; // false
 ```
 
-5. push和pop
+## 5. push和pop
 push()向Array的末尾添加若干元素，pop()则把Array的最后一个元素删除掉：  
 ```javascript
 var arr = [1, 2];
@@ -74,7 +74,7 @@ arr.pop(); // 空数组继续pop不会报错，而是返回undefined
 arr; // []
 ```
 
-6. unshift和shift
+## 6. unshift和shift
 如果要往Array的头部添加若干元素，使用unshift()方法，shift()方法则把Array的第一个元素删掉：
 ```javascript
 var arr = [1, 2];
@@ -88,7 +88,7 @@ arr.shift(); // 空数组继续shift不会报错，而是返回undefined
 arr; // []
 ```
 
-7. concat
+## 7. concat
 concat()方法把当前的Array和另一个Array连接起来，并返回一个新的Array：
 ```javascript
 var arr = ['A', 'B', 'C'];
@@ -102,7 +102,7 @@ arr; // ['A', 'B', 'C']
 var arr = ['A', 'B', 'C'];
 arr.concat(1, 2, [3, 4]); // ['A', 'B', 'C', 1, 2, 3, 4]  
 
-8. join
+## 8. join
 join()方法是一个非常实用的方法，它把当前Array的每个元素都用指定的字符串连接起来，然后返回连接后的字符串：
 ```javascript
 var arr = ['A', 'B', 'C', 1, 2, 3];
@@ -110,7 +110,7 @@ arr.join('-'); // 'A-B-C-1-2-3'
 ```
 如果Array的元素不是字符串，将自动转换为字符串后再连接。
 
-练习
+### 练习
 小明身高1.75，体重80.5kg。请根据BMI公式（体重除以身高的平方）帮小明计算他的BMI指数，并根据BMI指数：
 •	低于18.5：过轻
 •	18.5-25：正常
